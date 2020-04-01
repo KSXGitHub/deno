@@ -105,6 +105,7 @@ async function serveFile(
   const headers = new Headers();
   headers.set("content-length", fileInfo.size.toString());
   const contentTypeValue = contentType(filePath);
+  console.log(filePath, contentTypeValue);
   if (contentTypeValue) {
     headers.set("content-type", contentTypeValue);
   }
