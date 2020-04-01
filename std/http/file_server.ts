@@ -97,6 +97,8 @@ function fileLenToString(len: number): string {
   return `${(len / base).toFixed(2)}${suffix[suffixIndex]}`;
 }
 
+console.log(contentType, String(contentType))
+
 async function serveFile(
   req: ServerRequest,
   filePath: string
