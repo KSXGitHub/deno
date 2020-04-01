@@ -320,6 +320,7 @@ listenAndServe(
       if (info.isDirectory()) {
         response = await serveDir(req, fsPath);
       } else {
+        console.log("Serving File", fsPath);
         response = await serveFile(req, fsPath);
       }
     } catch (e) {
